@@ -10,8 +10,7 @@ def make_dep(name, version, dependency_name=None):
   python_requirement(requirement=versioned_name, name=name)
 
 make_dep('argparse', '1.2.1')
-#make_dep('mesos-core', '0.16.0-rc2', 'mesos')
-make_dep('mesos-core', '0.15.0', 'mesos')
+make_dep('mesos-core', '0.16.0', 'mesos')
 make_dep('mock', '1.0.1')
 make_dep('mox', '0.5.3')
 make_dep('psutil', '1.1.2')
