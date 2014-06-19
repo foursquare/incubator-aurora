@@ -12,7 +12,7 @@
 # limitations under the License.
 #
 
-COMMONS_VERSION = '0.3.0'
+COMMONS_VERSION = '0.3.1'
 
 python_requirement('argparse==1.2.1')
 python_requirement('bottle==0.11.6')
@@ -48,7 +48,7 @@ python_requirement('twitter.common.log==%s' % COMMONS_VERSION)
 python_requirement('twitter.common.metrics==%s' % COMMONS_VERSION)
 python_requirement('twitter.common.options==%s' % COMMONS_VERSION)
 python_requirement('twitter.common.process==%s' % COMMONS_VERSION)
-python_requirement('twitter.common.python==0.5.4')
+python_requirement('twitter.common.python==0.5.7')
 python_requirement('twitter.common.quantity==%s' % COMMONS_VERSION)
 python_requirement('twitter.common.recordio==%s' % COMMONS_VERSION)
 python_requirement('twitter.common.rpc==%s' % COMMONS_VERSION)
