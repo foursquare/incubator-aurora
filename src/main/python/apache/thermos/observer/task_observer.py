@@ -364,6 +364,16 @@ class TaskObserver(ExceptionalThread, Lockable):
       for st in state.statuses]
 
   @Lockable.sync
+  def task(self, task_ids):
+    res = {}
+    for task_id in task_ids:
+      d = self._task(task_id)
+      task_struct = d.pop('task_struct')
+      d['task'] = task_struct.get()
+      res[task_id] = d
+    return res
+
+  @Lockable.sync
   def _task(self, task_id):
     """
       Return composite information about a particular task task_id, given the below
